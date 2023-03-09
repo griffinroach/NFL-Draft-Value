@@ -1,4 +1,3 @@
-install.packages("nflfastR")
 library(nflfastR)
 library(ggplot2)
 library(ggimage)
