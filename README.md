@@ -18,7 +18,9 @@ For Linebackers, a small number were listed at Outside Linebacker or Inside Line
 It was the same for Defensive Backs, almost all were listed at that position, so players listed at Safety or Cornerback were switched.
 Finally, Offensive Linemen without a specific position were also a very small number, so I found all of their true positions and switched them.
 ## Data Visualized
+![Pick Value VS  Weighted Average Value](https://user-images.githubusercontent.com/126966561/225391753-52104b58-2a1b-4dbe-92b4-8d82698ef278.jpeg)
 
+Because the space between picks is not constant, there is a large concentration of players with low value picks. However, the line drawn by R shows there is a increase in Weighted Approximate Value overall as Pick Value increases.
 ## Regression
 
 ## Regression Including Year
