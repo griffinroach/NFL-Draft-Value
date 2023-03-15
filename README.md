@@ -11,9 +11,14 @@ For this project I used Weighted Average Value, as it values players with high p
 ## Dataset Being Used
 For this project I decided to use players drafted fro 2000 until 2022. The reason I used 2000 is not simply because of the new milenium, but because 2000 is the earliest draft class that had an active player in the 2022 season, Tom Brady. I combined all of the data from each draft class listed on Pro Football Reference into one spreadsheet, starting with Courtney Brown and ending with Brock Purdy.
 ## Data Cleaning
-
+In order to ensure the validity of the data I had to do a handful of tasks to ensure the data was accurate. The first was to add the year each player was drafted, allowing me to group each draft class. 
+Next I had to make sure that the team each player was drafted by used the team’s current name. The Chargers, Rams, Raiders, and Commanders have all changed their official names, and other teams are listed under a different abbreviation, like the Packers being listed as GNB but are typically just called GB. 
+Finally, I had to verify the accurate position of each player. Defensive players were not consistently listed for each position. Some players were not listed at Defensive End or Defensive Tackle, but rather just Defensive Line. Because very few were listed that way, I went and found the true position of every player listed at Defensive Line. 
+For Linebackers, a small number were listed at Outside Linebacker or Inside Linebacker, but because the vast majority were just listed at Linebacker, I standardized all to just Linebacker.
+It was the same for Defensive Backs, almost all were listed at that position, so players listed at Safety or Cornerback were switched.
+Finally, Offensive Linemen without a specific position were also a very small number, so I found all of their true positions and switched them.
 ## Data Visualized
- 
+
 ## Regression
 
 ## Regression Including Year
