@@ -22,7 +22,7 @@ Finally, Offensive Linemen without a specific position were also a very small nu
 
 Because the space between picks is not constant, there is a large concentration of players with low value picks. However, the line drawn by R shows there is a increase in Weighted Approximate Value overall as Pick Value increases.
 ## Regressions
-
+The first regression I created in R only used one variable, pick value, and it attempted to explain the Weighted Adjusted Value of players. The problem I encourted was the players drafted very recently were being compared against players who had played many more seasons and accumulated more Weighted Adjusted Value. Because I 
 ## When to Draft Each Position
 
 ## Draft Performance by Team
