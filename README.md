@@ -21,9 +21,7 @@ Finally, Offensive Linemen without a specific position were also a very small nu
 ![Pick Value VS  Weighted Average Value](https://user-images.githubusercontent.com/126966561/225391753-52104b58-2a1b-4dbe-92b4-8d82698ef278.jpeg)
 
 Because the space between picks is not constant, there is a large concentration of players with low value picks. However, the line drawn by R shows there is a increase in Weighted Approximate Value overall as Pick Value increases.
-## Regression
-
-## Regression Including Year
+## Regressions
 
 ## When to Draft Each Position
 
