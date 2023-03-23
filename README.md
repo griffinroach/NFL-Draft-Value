@@ -29,9 +29,15 @@ Next I created a pivot table based on the average difference between expected an
 ![Draft Value by Position](https://user-images.githubusercontent.com/126966561/226605418-87290c25-f6d5-4b13-902b-fe508ccb8a1d.png)
 This table shows by round which positions have provided more wAV compared to the expected. For example, the best time to draft a Quarterback is the first round, with second round picks being the only others with a value greater than zero. Kickers and Punters generally perform better selected in the sixth or seventh rounds. Another  interesting results is that Guards provide a positive value in every round, while defensive backs are always negative.
 Using these values teams could maximize their value by targeting team needs based on how much value the pick is expected to provide. If they have a selection but all of their needs are negative or have higher returns later, the best decision would be to trade back. 
-A surprise I found was that as a whole, picks have a negative expected value outside of the first round. This means that overall that many later round picks are over valued, while middle of the first round picks are actually undervalued.
+A surprise I found was that as a whole, picks have a negative expected value. This means that overall that most of the picks made do not
 ## Draft Performance by Team
 Back in R I used the NFLfastR package to visualize each team's success in drafting compared to how much was expected. 
 ![NFL wAV vs Expected](https://user-images.githubusercontent.com/126966561/227071656-0bc340b4-30ed-4fb4-824e-78c45f2723fb.png)
 The line is y=x, meaning teams above the line got more value than was expected, while teams below got less. As expected, most teams do not properly utilize their picks based on traditional valuation, but 11 teams still over performed.
+## Effect on winning
+The last question I wanted to analyze was how important draft success was to team success. In R I made an additional plot with winning percentage on the Y axis and Observed wAV minus expected wAV with these results.
+![Screenshot 2023-03-23 030530](https://user-images.githubusercontent.com/126966561/227084665-5155e0e8-8dc4-4724-8bc1-fa5a5bc29add.png)
+Looking at this graph it is obvious that there is a strong corelation; using draft value better leads to more games won.
 ## Conclusion
+Based on my analysis there is room for teams to improve their draft value analysis. The R-Squared provided by my regression provide more insight than the use of just traditional measurement. In addition to this, my model shows the track record for each position and round, and which positions are more likely for positive results. Finally, there is a clear positive correlation between performance in my metric and team winning percentage, the goal of NFL teams. 
+If I were to do this again I would try to create a model that uses more than just two variables. Starting with position, but also things like NFL combine numbers, College stats, height, and weight to see what other ways player success can be predicted.
