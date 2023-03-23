@@ -32,4 +32,6 @@ Using these values teams could maximize their value by targeting team needs base
 A surprise I found was that as a whole, picks have a negative expected value outside of the first round. This means that overall that many later round picks are over valued, while middle of the first round picks are actually undervalued.
 ## Draft Performance by Team
 Back in R I used the NFLfastR package to visualize each team's success in drafting compared to how much was expected. 
-## Effect of Draft Performance on Winning Percentage
+![NFL wAV vs Expected](https://user-images.githubusercontent.com/126966561/227071656-0bc340b4-30ed-4fb4-824e-78c45f2723fb.png)
+The line is y=x, meaning teams above the line got more value than was expected, while teams below got less. As expected, most teams do not properly utilize their picks based on traditional valuation, but 11 teams still over performed.
+## Conclusion
