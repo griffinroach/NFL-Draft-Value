@@ -25,8 +25,9 @@ Because the space between picks is not constant, there is a large concentration 
 The first regression I created in R only used one variable, pick value, and it attempted to explain the Weighted Adjusted Value of players. The problem I encourted was the players drafted very recently were being compared against players who had played many more seasons and accumulated more Weighted Adjusted Value. Because I wanted an accurate representation of each player, I added year drafted as a second variable. The final regression I ended with was E[Weighted Approximate Value] =  9.50856+2.00706*(Pick Value^0.5)-8.71421*(2023-Year Drafted)^-0.3-1.97556*(Pick Value)^0.5*(2023-Year Drafted)^0.3.
 ## When to Draft Each Position
 I took the regression formula and plugged it into the original spreadsheet and compared the expected value to the the actual value and the top and bottom were no surprises. The greatest pick value was Tom Brady at pick 199 in 2000, followed by Drew Brees and Aaron Rodgers. The biggest bust was Charles Rodgers, whose career was derailed by injuries early on. Next after him is JaMarcus Russell and Jason Smith. 
-After creating a pivot table I grouped
+Next I created a pivot table based on the average difference between expected and observed Weighted Approximate Value. In the rows I put position and in the columns I put the round. 
 ![Draft Value by Position](https://user-images.githubusercontent.com/126966561/226605418-87290c25-f6d5-4b13-902b-fe508ccb8a1d.png)
+This table shows by round which positions have provided more wAV compared to the expected. For example, the best time to draft a Quarterback is the first round, with second round picks being the only others with a value greater than zero. Kickers and Punters generally perform better selected in the sixth or seventh rounds. Another  interesting results is that Guards provide a positive value in every round, while defensive backs are always negative.
 ## Draft Performance by Team
 
 ## Effect of Draft Performance on Winning Percentage
